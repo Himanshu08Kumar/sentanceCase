@@ -3,6 +3,7 @@ import Display from './components/Display'
 import Buttons from './components/Buttons'
 import InputDetails from './components/InputDetails'
 import { useEffect, useState } from 'react'
+import Header from './components/Header'
 
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
 
   return (
     <>
+     <Header/>
      <Display textInput={textInput} handleInputChange={handleInputChange}/>
      <div className='display'>
      <InputDetails detail={countChar} title="Character Count:"/>
