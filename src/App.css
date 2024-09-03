@@ -19,7 +19,7 @@ form {
 }
 
 textarea[type="text"] {
-  width: 500px;
+  max-width: 500px;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
@@ -54,4 +54,9 @@ div {
 .display{
   display: flex;
   justify-content:space-between;
+}
+.display1{
+  margin-top: 20px;
+  display: flex;
+  justify-content:space-evenly;
 }

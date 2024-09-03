@@ -24,7 +24,7 @@ function App() {
     e.preventDefault();
     setTextInput((e) => e.toUpperCase());
   };
-  const sentanceCase = (e) => {
+  const sentenceCase = (e) => {
     e.preventDefault();
     setTextInput((prevInput) => prevInput.charAt(0).toUpperCase() + prevInput.slice(1).toLowerCase());
   }
@@ -42,12 +42,14 @@ function App() {
      <Header/>
      <Display textInput={textInput} handleInputChange={handleInputChange}/>
      <div className='display'>
-     <InputDetails detail={countChar} title="Character Count:"/>
+     <InputDetails detail={countChar} title="Character Count : "/>
      <InputDetails detail={countWord} title="Word Count : "/>
      </div>
+     <div className='display1'>
      <Buttons onClick={lowerCase} title="lower case" />
      <Buttons onClick={upperCase} title="upper case"/>
-     <Buttons onClick={sentanceCase} title="sentance case"/>
+     <Buttons onClick={sentenceCase} title="sentence case"/>
+     </div>
     </>
   )
 }
