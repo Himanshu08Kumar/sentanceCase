@@ -19,7 +19,7 @@ form {
 }
 
 textarea[type="text"] {
-  width: 300px;
+  width: 500px;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
@@ -30,7 +30,7 @@ textarea[type="text"] {
 button {
   padding: 10px 20px;
   margin: 5px;
-  background-color: #007bff;
+  background: #007bff;
   color: #434141;
   border: none;
   border-radius: 4px;
@@ -50,4 +50,8 @@ button:focus {
 
 div {
   text-align: center;
+}
+.display{
+  display: flex;
+  justify-content:space-between;
 }

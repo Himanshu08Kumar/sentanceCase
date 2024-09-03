@@ -3,7 +3,11 @@ import React from 'react';
 const Buttons = ({ onClick , title}) => {
   return (
     <div>
-      <button onClick={onClick}>{title}</button>
+      <button onClick={onClick} 
+      style={{border: "1px solid black"}}
+      >
+        {title}
+      </button>
     </div>
   );
 };
